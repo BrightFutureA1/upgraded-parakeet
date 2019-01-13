@@ -1,0 +1,22 @@
+class MyCar(object):
+    "This is a class that describes the characteristics of a car."
+    def __init__(self, make, model, year, color):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.color = color
+        
+    def print_car(self, manuf_date):
+        print("The car make is: ", self.make)
+        print("The car model is: ", self.model)
+        print("The year of: ", self.year)
+        print("The color is: ", self.color)
+        print("The model and date combined: ", self.model + manuf_date)
+        
+class MyNewCar(MyCar):
+    def __init__(self, make, model, year, color, engine):
+        MyCar.__init__(self, make, model,year,color)
+        self.engine=engine
+        
+    def print_new_car(self, string):
+        print(string + self.model)
