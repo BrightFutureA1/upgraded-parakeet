@@ -1,0 +1,28 @@
+import math
+
+def toDegrees():
+    radians=float(input("Enter angle in radians: "))
+    degrees=radians*(180/math.pi)
+    print(radians, "in degrees is", degrees)
+    
+    def main():
+    toDegrees()
+    
+    main
+    
+    OutPut:
+    Enter angle in radians: 90
+    90.0 in degrees is 5156.620156177409
+    
+    
+    def toRadians():
+        degrees=float(input("Enter angle in degrees: "))
+        radians=degrees*(math.pi/180)
+        print(degrees, "in radians is", radians)
+        
+        main()
+        
+        OutPut: 
+        
+        Enter angle in radians: 45
+        45.0 in degrees is 2578.3100780887044
